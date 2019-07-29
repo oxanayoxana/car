@@ -2,6 +2,7 @@
 
 module Validator
   def validate(item)
-    return true if item.size >= 3
+    return false if item.nil? == true
+    return true if item.size >= 2
   end
 end

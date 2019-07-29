@@ -49,6 +49,8 @@ class Journey
     logic
   end
 
+  private
+
   def logic
     case action
     when 'Y'
