@@ -1,5 +1,10 @@
+# frozen_string_literal: true
+
+require_relative 'validator.rb'
 
 class Car
+  extend Validator
+
   attr_accessor :model
 
   def initialize
@@ -11,7 +16,6 @@ class Car
   end
 
   def valid?
-    return true if @model.size >= 3
+    Car.validate(model)
   end
-
 end

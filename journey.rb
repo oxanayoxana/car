@@ -1,10 +1,11 @@
+# frozen_string_literal: true
+
 require_relative 'messages.rb'
 require_relative 'car.rb'
 require_relative 'color.rb'
 require_relative 'city.rb'
 
 class Journey
-
   attr_reader :action, :car, :color, :city, :message
 
   def initialize

@@ -1,4 +1,10 @@
+# frozen_string_literal: true
+
+require_relative 'validator.rb'
+
 class City
+  extend Validator
+
   attr_accessor :my_city
 
   def initialize
@@ -10,6 +16,6 @@ class City
   end
 
   def valid?
-    return true if @my_city.size >= 2
+    City.validate(my_city)
   end
 end

@@ -1,5 +1,6 @@
-class Messages
+# frozen_string_literal: true
 
+class Messages
   def welcome
     puts 'Welcome!'
   end
@@ -9,7 +10,7 @@ class Messages
   end
 
   def chose_color
-    puts "Please, enter color of this car: "
+    puts 'Please, enter color of this car: '
   end
 
   def chose_city
@@ -25,7 +26,3 @@ class Messages
     puts 'Goodbye'
   end
 end
-
-
-
-

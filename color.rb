@@ -1,4 +1,9 @@
+# frozen_string_literal: true
+
+require_relative 'validator.rb'
+
 class Color
+  extend Validator
 
   attr_accessor :model_color
 
@@ -11,6 +16,6 @@ class Color
   end
 
   def valid?
-    return true if @model_color.size >= 3
+    Color.validate(model_color)
   end
 end
